@@ -6,6 +6,14 @@ function NoteStatus({notes}) {
     const completedNotes = notes.filter((n)=> n.completed).lenght;
     const unCompletedNotes = allNotes  - completedNotes;
 
+
+
+    if (!allNotes) return <h2>No Notes has already been added.</h2>;
+      
+    
+
+
+
   return (
     <ul className="note-status">
     <li>

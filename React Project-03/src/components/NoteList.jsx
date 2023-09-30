@@ -32,7 +32,7 @@ function NoteItem({note,onDelete,onComplete}){
     };
   
       return(
-          <div className={`note-item ${note.Complete ? "complete" : ""}` } >
+          <div className={`note-item ${note.completed ? "completed" : ""}` } >
               <div className="note-item__header">
               <div> 
                 {}
@@ -48,8 +48,9 @@ function NoteItem({note,onDelete,onComplete}){
                    name={note.id}
                     id={note.id}
                      value={note.id}
+                     checked={note.Completed}
                       onChange={onComplete}
-                      checked={note.onComplete} />
+                       />
               </div>
   
               </div>
