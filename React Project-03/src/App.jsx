@@ -20,7 +20,7 @@ const handleAddNote=(newNote)=>{
         <AddNewNote  onAddNote={handleAddNote}  />
     
         <div className="note-container">
-          <NoteList notes={notes}   />
+          <NoteList notes={notes && notes}    /> 
           
         </div>
       </div>
