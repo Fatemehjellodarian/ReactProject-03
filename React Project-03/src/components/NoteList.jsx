@@ -9,8 +9,8 @@ function NoteList({notes}) {
 
 
         ))}
-         
-     
+        
+  
     </div>
   );
 }
