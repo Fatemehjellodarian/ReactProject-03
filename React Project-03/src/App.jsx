@@ -12,6 +12,12 @@ const handleAddNote=(newNote)=>{
   setNotes((prevNotes)=>[...prevNotes,newNote]);
 };
 
+const handleDeleteNote=(id)=>{
+  const filteredNotes = notes.filter((n)=>n.id!== id );
+  setNotes(filteredNotes);
+
+}
+
 
 
 
@@ -22,7 +28,7 @@ const handleAddNote=(newNote)=>{
         <AddNewNote onAddNote ={handleAddNote} />
     
         <div className="note-container">
-          <NoteList  notes={notes}    /> 
+          <NoteList  notes={notes}  onDelete={handleDeleteNote}   /> 
           
         </div>
       </div>
