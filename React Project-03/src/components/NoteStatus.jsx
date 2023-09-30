@@ -1,6 +1,8 @@
 
 
+
 function NoteStatus({notes}) {
+    const notes= useNotes([]);
 
     const allNotes = notes.lenght;
     const completedNotes = notes.filter((n)=> n.completed).lenght;
