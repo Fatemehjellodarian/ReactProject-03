@@ -3,13 +3,12 @@ function NoteList({notes}) {
 
     
   return (
-    <div className="note-list">
-        {notes && notes.map((notes)=>(
+    <div className="note-list"> NoteList
+        {notes.map((notes)=>(
         <NoteItem key={notes.id} note={notes} />
 
 
-        ))};
-        
+        ))}
   
     </div>
   );

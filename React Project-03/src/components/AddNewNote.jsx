@@ -20,6 +20,7 @@ const handleSubmit=(e)=>{
       createdAt: new Date().toISOString(),
 
     }
+    
     onAddNote(newNote);
           setTitle("")
       setDescription("")

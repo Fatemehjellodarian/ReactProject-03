@@ -5,7 +5,9 @@ import NoteList from "./components/NoteList";
 
 function App() {
 
-const [notes,setNotes]=useState();   
+const [notes,setNotes]=useState([]);  
+
+
 const handleAddNote=(newNote)=>{
   setNotes((prevNotes)=>[...prevNotes,newNote]);
 };
@@ -17,10 +19,10 @@ const handleAddNote=(newNote)=>{
     <div className="container">
       <div className="note-header">note header</div>
         <div className="note-app">
-        <AddNewNote  onAddNote={handleAddNote}  />
+        <AddNewNote onAddNote ={handleAddNote} />
     
         <div className="note-container">
-          <NoteList notes={notes && notes}    /> 
+          <NoteList  notes={notes}    /> 
           
         </div>
       </div>
