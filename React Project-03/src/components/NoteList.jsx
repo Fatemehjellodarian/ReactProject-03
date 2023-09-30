@@ -5,10 +5,10 @@ function NoteList({notes}) {
   return (
     <div className="note-list">
         {notes.map((notes)=>(
-        <NoteItem key={notes.id} note={notes} />vvv
+        <NoteItem key={notes.id} note={notes} />
 
 
-        ))}
+        ))};
         
   
     </div>
