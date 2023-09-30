@@ -22,15 +22,12 @@ const handleDeleteNote=(id)=>{
 const handleCompleteNote = (e)=>{
 const noteId= Number(e.target.value);
 
-  //const newNotes = notes.map((note)=>
-  //note.id ===  noteId ? {...note,completed: !note,completed}:
+  const newNotes = notes.map((note)=>
+  note.id ===  noteId ? {...note,completed: !note.completed}:n
 
- // );
- // setNotes(newNotes);
+  );
+  setNotes(newNotes);
 
-setNotes(prevNotes)
-prevNotes.map((note)=>
-note.id ===noteId ? {...note,completed : !note.completed}:n );
 
 };
 

@@ -4,7 +4,7 @@ function NoteStatus({notes}) {
 
     const allNotes = notes.lenght;
     const completedNotes = notes.filter((n)=> n.completed).lenght;
-    const unCompletedNotes = allNotes  - completedNotes;
+    const unCompletedNotes = allNotes - completedNotes;
 
 
 
@@ -16,7 +16,7 @@ function NoteStatus({notes}) {
 
   return (
     <ul className="note-status">
-    <li>
+    <li> 
       All <span>{allNotes}</span>
     </li>
     <li>
