@@ -5,7 +5,7 @@ function NoteList({notes}) {
   return (
     <div className="note-list">
         {notes.map((notes)=>(
-        <NoteItem key={note.id} note={note} />
+        <NoteItem key={notes.id} note={notes} />
 
 
         ))}
