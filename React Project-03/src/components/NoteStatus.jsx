@@ -2,11 +2,11 @@
 
 
 function NoteStatus({notes}) {
-    const notes= useNotes([]);
+  
+  const allNotes = notes.length;
+  const completedNotes = notes.filter((n)=> n.completed).length;
+  const unCompletedNotes = allNotes - completedNotes;
 
-    const allNotes = notes.lenght;
-    const completedNotes = notes.filter((n)=> n.completed).lenght;
-    const unCompletedNotes = allNotes - completedNotes;
 
 
 
