@@ -46,7 +46,12 @@ const noteId= Number(e.target.value);
 
   return(
     <div className="container">
-      <NoteHeader  notes={notes}  sortBy={sortBy} onSort={(e)=>setSortBy(e.target.value)} />
+      <NoteHeader 
+       notes={notes} 
+       sortBy={sortBy}
+       onSort={(e)=>setSortBy(e.target.value)}
+       
+       />
       <div className="note-header">note header</div>
         <div className="note-app">
         <AddNewNote onAddNote ={handleAddNote} />
@@ -55,6 +60,7 @@ const noteId= Number(e.target.value);
           <NoteStatus notes={notes}    />
 
           <NoteList
+          sortBy={sortBy}
             notes={notes}
             onDelete={handleDeleteNote} 
            onComplete={handleCompleteNote}  /> 

@@ -19,4 +19,4 @@ function NoteHeader({notes,sortBy,onSort}) {
   )
 }
 
-export default NoteHeader
+export default NoteHeader;
